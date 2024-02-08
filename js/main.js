@@ -68,7 +68,7 @@ if (inicioCorrecto){
         let prestamo = parseFloat (prompt ("ingresa el monto que queres recibir y se acreditará a tu saldo. Recordá que nos vas a devolver ese monto más un 10% de interés"));
         //let interes =  prestamo * 0.1 ;
         calculo (prestamo, 0.1 )
-        let interes = calculo + prestamo;
+        let interes = calculo (prestamo, 0.1) + prestamo;
         
         alert ("nos vas a devolver $" + interes);
         saldo = saldo + prestamo
@@ -77,8 +77,6 @@ if (inicioCorrecto){
     }
     opciones = prompt ("Selecciona alguna de las siguientes opciones: \n1 - Saldo en tu cuenta \n2 - Equipos disponibles \n3 - Préstamos con interés \nPresiona X para salir");
   }
-} else {
-  alert ("Perdiste los 3 intentos. Intenta de nuevo mas tarde")
 }
 
 
